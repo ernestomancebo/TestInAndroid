@@ -14,6 +14,7 @@ public class FrmMensaje extends Activity {
 		TextView txtMensaje = (TextView) findViewById(R.id.txtMensaje);
 		Bundle bundle = getIntent().getExtras();
 
-		txtMensaje.setText("Hi " + bundle.getString("NOMBRE"));
+		txtMensaje.setText("Hi " + bundle.getString("NOMBRE") + "\n"
+				+ bundle.getBoolean("CHK"));
 	}
 }

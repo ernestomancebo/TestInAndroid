@@ -24,6 +24,18 @@
         </activity>
         <activity android:name="com.ernesto.testinandroid.FrmMensaje" >
         </activity>
+        <activity
+            android:name="com.ernesto.testinandroid.Titular"
+            android:label="Listas!" >
+        </activity>
+        <activity
+            android:name="com.ernesto.testinandroid.Image"
+            android:label="@string/title_activity_image" >
+        </activity>
+        <activity
+            android:name="com.ernesto.testinandroid.ElementosListas"
+            android:label="@string/title_activity_list" >
+        </activity>
     </application>
 
 </manifest>

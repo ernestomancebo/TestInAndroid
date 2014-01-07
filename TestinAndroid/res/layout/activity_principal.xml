@@ -11,7 +11,7 @@
 
     <EditText
         android:id="@+id/txtNombre"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
     <Button
@@ -19,5 +19,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/saludar" />
+
+    <Button
+        android:id="@+id/btnPrueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prueba" />
+
+    <CheckBox
+        android:id="@+id/chkTst"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Toca" />
+
+    <RadioGroup
+        android:id="@+id/grpRadio"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtn1"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/rbtn2"
+            android:text="2" />
+    </RadioGroup>
 
 </LinearLayout>
