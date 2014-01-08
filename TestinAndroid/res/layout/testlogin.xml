@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ernes="http://schemas.android.com/apk/res/com.ernesto.testinandroid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ernesto.testinandroid.controller.LoginControl
+        android:id="@+id/ctrlLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ffaa"
+        ernes:login_text="Pa dentro" >
+    </com.ernesto.testinandroid.controller.LoginControl>
+
+</LinearLayout>

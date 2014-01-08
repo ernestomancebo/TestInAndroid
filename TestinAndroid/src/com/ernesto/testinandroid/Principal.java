@@ -19,6 +19,7 @@ public class Principal extends Activity {
 		final Button btnHola = (Button) findViewById(R.id.btnSaludar);
 		final Button btnPrueba = (Button) findViewById(R.id.btnPrueba);
 		final Button btnTab = (Button) findViewById(R.id.btnTab);
+		final Button bntLogin = (Button) findViewById(R.id.btnLogin);
 
 		btnHola.setOnClickListener(new OnClickListener() {
 			@Override
@@ -49,6 +50,14 @@ public class Principal extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent(Principal.this, Tabs.class);
+				startActivity(intent);
+			}
+		});
+
+		bntLogin.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(Principal.this, TestLogin.class);
 				startActivity(intent);
 			}
 		});

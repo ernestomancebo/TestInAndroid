@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="16"
         android:targetSdkVersion="17" />
 
     <application
@@ -35,6 +35,14 @@
         <activity
             android:name="com.ernesto.testinandroid.Tabs"
             android:label="@string/title_activity_tabs" >
+        </activity>
+        <activity
+            android:name="com.ernesto.testinandroid.TestLogin"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name="com.ernesto.testinandroid.Titular"
+            android:label="Login" >
         </activity>
     </application>
 

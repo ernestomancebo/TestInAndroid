@@ -32,6 +32,12 @@
         android:layout_height="wrap_content"
         android:text="Tabs" />
 
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
     <CheckBox
         android:id="@+id/chkTst"
         android:layout_width="fill_parent"

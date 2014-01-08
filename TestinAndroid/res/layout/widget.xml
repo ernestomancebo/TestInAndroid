@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00ff00"
+        android:padding="10dp" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/txtMsj"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/hello_world"
+                android:textColor="#000000" />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>
