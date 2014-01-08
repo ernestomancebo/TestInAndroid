@@ -32,6 +32,10 @@
             android:name="com.ernesto.testinandroid.ElementosListas"
             android:label="@string/title_activity_list" >
         </activity>
+        <activity
+            android:name="com.ernesto.testinandroid.Tabs"
+            android:label="@string/title_activity_tabs" >
+        </activity>
     </application>
 
 </manifest>

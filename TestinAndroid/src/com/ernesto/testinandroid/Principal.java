@@ -18,9 +18,9 @@ public class Principal extends Activity {
 
 		final Button btnHola = (Button) findViewById(R.id.btnSaludar);
 		final Button btnPrueba = (Button) findViewById(R.id.btnPrueba);
+		final Button btnTab = (Button) findViewById(R.id.btnTab);
 
 		btnHola.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
 				final CheckBox chk = (CheckBox) findViewById(R.id.chkTst);
@@ -38,10 +38,17 @@ public class Principal extends Activity {
 		});
 
 		btnPrueba.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View arg0) {
 				Intent intent = new Intent(Principal.this, Titular.class);
+				startActivity(intent);
+			}
+		});
+
+		btnTab.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(Principal.this, Tabs.class);
 				startActivity(intent);
 			}
 		});
