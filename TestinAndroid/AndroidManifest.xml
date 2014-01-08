@@ -44,6 +44,29 @@
             android:name="com.ernesto.testinandroid.Titular"
             android:label="Login" >
         </activity>
+
+        <receiver
+            android:name=".controller.WidgetController"
+            android:label="Testing Widget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" >
+                </action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+        </receiver>
+
+        <activity android:name=".WidgetConfig" >
+            <intent-filter>
+                <action android:name="android.apwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <intent-filter>
+            <action android:name="com.ernesto.testinandroid.ACTUALIZAR_WIDGET" />
+        </intent-filter>
     </application>
 
 </manifest>
