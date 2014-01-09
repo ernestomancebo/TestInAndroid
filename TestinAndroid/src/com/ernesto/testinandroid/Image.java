@@ -2,7 +2,6 @@ package com.ernesto.testinandroid;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
 import android.widget.ImageView;
 
 public class Image extends Activity {
