@@ -9,5 +9,6 @@
     <string name="title_activity_image">Image</string>
     <string name="title_activity_list">List</string>
     <string name="title_activity_tabs">Tabs</string>
+    <string name="title_activity_noticias">Noticias</string>
 
 </resources>
