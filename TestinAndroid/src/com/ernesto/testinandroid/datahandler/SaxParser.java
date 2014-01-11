@@ -6,9 +6,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import org.xml.sax.Attributes;
 
-import com.ernesto.testinandroid.model.Noticia;
+import org.xml.sax.Attributes;
 
 import android.sax.Element;
 import android.sax.EndElementListener;
@@ -16,6 +15,8 @@ import android.sax.EndTextElementListener;
 import android.sax.RootElement;
 import android.sax.StartElementListener;
 import android.util.Xml;
+
+import com.ernesto.testinandroid.model.Noticia;
 
 public class SaxParser {
 
@@ -84,19 +85,20 @@ public class SaxParser {
 				});
 
 		try {
-			Xml.parse(this.getInputStream(), Xml.Encoding.UTF_8,
-					root.getContentHandler());
+			InputStream is = this.getInputStream();
+			Xml.parse(is, Xml.Encoding.UTF_8, root.getContentHandler());
 		} catch (Exception ex) {
 			throw new RuntimeException(ex);
 		}
+
 		return noticias;
 	}
 
-	private InputStream getInputStream() {
+	private InputStream getInputStream() throws IOException {
 		try {
 			return rssUrl.openConnection().getInputStream();
 		} catch (IOException e) {
-			throw new RuntimeException(e);
+			throw new IOException(e);
 		}
 	}
 }

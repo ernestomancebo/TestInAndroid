@@ -13,6 +13,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 import android.app.Activity;
 import android.content.Intent;
 
@@ -76,8 +77,14 @@ public class Principal extends Activity {
 		bntNoticias.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(Principal.this, Noticias.class);
-				startActivity(intent);
+				if (Util.isConnectedToInternet(getApplicationContext())) {
+					Intent intent = new Intent(Principal.this, Noticias.class);
+					startActivity(intent);
+				} else {
+					Toast t = Toast.makeText(getApplicationContext(),
+							"Problemas de conexión", Toast.LENGTH_SHORT);
+					t.show();
+				}
 			}
 		});
 
