@@ -3,6 +3,7 @@ package com.ernesto.testinandroid;
 import android.os.Bundle;
 import android.app.Activity;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 public class Image extends Activity {
 
@@ -11,8 +12,8 @@ public class Image extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.image);
 
-		ImageView img = (ImageView) findViewById(R.id.imgView);
-		img.setImageResource(R.drawable.ic_launcher);
+		// ProgressBar prog = (ProgressBar) findViewById(R.id.btn_loading);
+		// prog.setp
 	}
 
 }

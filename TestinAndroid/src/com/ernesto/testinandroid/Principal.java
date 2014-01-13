@@ -53,7 +53,7 @@ public class Principal extends Activity {
 		btnPrueba.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent(Principal.this, Titular.class);
+				Intent intent = new Intent(Principal.this, Image.class);
 				startActivity(intent);
 			}
 		});
